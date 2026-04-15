@@ -5,7 +5,7 @@
 @tailwind utilities;
 @import "tailwindcss/preflight";
 
-@source "../*.html";
+/* @source "../*.html"; */
 
 @layer base {
     *,
@@ -26,7 +26,7 @@
         display: none;
     }
 }
-@layer base {
+/* @layer base {
 *,
 *::before,
 *::after {
@@ -38,4 +38,4 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
-}
+} */
