@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pro Tailwind UI</title>
+  <link href="./src/output.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+</head>
+
+<body class="bg-gray-100 font-sans">
+
+<!-- SIDEBAR -->
+<div class="flex">
+
+  <aside class="w-64 bg-gray-900 text-white min-h-screen p-6">
+    <h1 class="text-2xl font-bold mb-10">MyApp</h1>
+
+    <nav class="space-y-4">
+      <a href="#" class="block hover:text-yellow-300">Dashboard</a>
+      <a href="#" class="block hover:text-yellow-300">Analytics</a>
+      <a href="#" class="block hover:text-yellow-300">Users</a>
+      <a href="#" class="block hover:text-yellow-300">Settings</a>
+    </nav>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="flex-1">
+
+    <!-- NAVBAR -->
+    <div class="bg-white shadow p-4 flex justify-between">
+      <h2 class="text-xl font-bold">Dashboard</h2>
+      <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-800">
+        Upgrade Plan
+      </button>
+    </div>
+
+    <!-- STATS -->
+    <section class="p-8 grid md:grid-cols-4 gap-6">
+
+      <div class="bg-white p-6 rounded-xl shadow hover:scale-105 transition">
+        <h3 class="text-gray-500">Users</h3>
+        <p class="text-3xl font-bold">12,450</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow hover:scale-105 transition">
+        <h3 class="text-gray-500">Revenue</h3>
+        <p class="text-3xl font-bold">$34,900</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow hover:scale-105 transition">
+        <h3 class="text-gray-500">Orders</h3>
+        <p class="text-3xl font-bold">1,240</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow hover:scale-105 transition">
+        <h3 class="text-gray-500">Growth</h3>
+        <p class="text-3xl font-bold text-green-500">+18%</p>
+      </div>
+
+    </section>
+
+    <!-- USER CARDS -->
+    <section class="px-8">
+      <h2 class="text-2xl font-bold mb-6">Team Members</h2>
+
+      <div class="grid md:grid-cols-3 gap-6">
+
+        <div class="bg-white p-6 rounded-xl shadow text-center">
+          <img src="https://i.pravatar.cc/100" class="mx-auto rounded-full mb-4">
+          <h3 class="font-bold">John Doe</h3>
+          <p class="text-gray-500">Frontend Dev</p>
+          <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded">View</button>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow text-center">
+          <img src="https://i.pravatar.cc/101" class="mx-auto rounded-full mb-4">
+          <h3 class="font-bold">Sara Smith</h3>
+          <p class="text-gray-500">UI Designer</p>
+          <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded">View</button>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow text-center">
+          <img src="https://i.pravatar.cc/102" class="mx-auto rounded-full mb-4">
+          <h3 class="font-bold">Mike Ross</h3>
+          <p class="text-gray-500">Backend Dev</p>
+          <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded">View</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="p-8">
+      <h2 class="text-2xl font-bold text-center mb-10">Pricing Plans</h2>
+
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <div class="bg-white p-8 rounded-xl shadow text-center">
+          <h3 class="text-xl font-bold">Starter</h3>
+          <p class="text-4xl my-4">$9</p>
+          <ul class="space-y-2 mb-6">
+            <li>1 Project</li>
+            <li>Email Support</li>
+          </ul>
+          <button class="bg-blue-600 text-white px-6 py-2 rounded">Choose</button>
+        </div>
+
+        <div class="bg-blue-600 text-white p-8 rounded-xl shadow text-center scale-105">
+          <h3 class="text-xl font-bold">Pro</h3>
+          <p class="text-4xl my-4">$29</p>
+          <ul class="space-y-2 mb-6">
+            <li>10 Projects</li>
+            <li>Priority Support</li>
+          </ul>
+          <button class="bg-white text-blue-600 px-6 py-2 rounded">Choose</button>
+        </div>
+
+        <div class="bg-white p-8 rounded-xl shadow text-center">
+          <h3 class="text-xl font-bold">Enterprise</h3>
+          <p class="text-4xl my-4">$99</p>
+          <ul class="space-y-2 mb-6">
+            <li>Unlimited Projects</li>
+            <li>24/7 Support</li>
+          </ul>
+          <button class="bg-blue-600 text-white px-6 py-2 rounded">Choose</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section class="bg-white p-10 m-8 rounded-xl shadow">
+      <h2 class="text-2xl font-bold mb-6">Contact Us</h2>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <input class="border p-3 rounded" placeholder="Name">
+        <input class="border p-3 rounded" placeholder="Email">
+      </div>
+
+      <textarea class="border p-3 rounded w-full mt-6" rows="4" placeholder="Message"></textarea>
+
+      <button class="mt-6 bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-800">
+        Send Message
+      </button>
+    </section>
+
+  </main>
+</div>
+
+</body>
+</html>

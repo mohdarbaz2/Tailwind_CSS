@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio</title>
+  <link href="./src/output.css" rel="stylesheet">
+      <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+      <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+
+</head>
+
+<body class="bg-gray-100">
+
+<!-- Navbar -->
+<nav class="bg-gray-900 text-white p-4 flex justify-between">
+  <h1 class="text-xl font-bold">My Portfolio</h1>
+  <div class="space-x-4">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="text-center py-20 bg-white">
+  <h1 class="text-5xl font-bold mb-4">Hi, I'm a Developer 👋</h1>
+  <p class="text-gray-600">Learning Tailwind + Web Development</p>
+</section>
+
+<!-- About -->
+<section id="about" class="p-10">
+  <h2 class="text-3xl font-bold mb-4">About Me</h2>
+  <p>I build web apps using HTML, CSS, JS and Tailwind.</p>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="p-10 bg-white">
+  <h2 class="text-3xl font-bold mb-6">Projects</h2>
+
+  <div class="grid md:grid-cols-3 gap-6">
+
+    <div class="bg-white shadow p-6 rounded hover:scale-105 transition">
+      <h3 class="font-bold text-xl">Login UI</h3>
+      <p>Beautiful login page</p>
+    </div>
+
+    <div class="bg-white shadow p-6 rounded hover:scale-105 transition">
+      <h3 class="font-bold text-xl">Dashboard</h3>
+      <p>Admin dashboard UI</p>
+    </div>
+
+    <div class="bg-white shadow p-6 rounded hover:scale-105 transition">
+      <h3 class="font-bold text-xl">Portfolio</h3>
+      <p>Personal website</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="p-10 text-center">
+  <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
+  <button class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-800">
+    Send Email
+  </button>
+</section>
+
+</body>
+</html>
